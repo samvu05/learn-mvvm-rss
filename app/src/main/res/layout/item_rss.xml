@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="itemData"
+            type="com.sam.learnmvvm.RssData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_margin="4dp"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item_bg"></ImageView>
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Việt Nam thêm 14 ca mắc Covid-19"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"></TextView>
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textStyle="normal"
+                android:text="Như vậy, tính đến 18h ngày 6/7, Việt Nam có tổng cộng 229 ca nhiễm nhập cảnh được cách ly ngay."
+                android:textColor="#263238"
+                android:textSize="14sp"
+                android:maxLines="5"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
